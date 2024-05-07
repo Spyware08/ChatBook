@@ -1,0 +1,88 @@
+.signin_main {
+    padding: 30px 20px ;
+    text-align: center;
+    color: white;
+}
+
+.signin_input input {
+    display: block;
+    width: 250px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    padding: 5px 10px;
+    outline: none;
+    margin: 20px auto;
+
+}
+
+
+.signin_content {
+    display: flex;
+    justify-content: center;
+}
+
+.signin_btn {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    gap: 10px;
+
+}
+
+.signin_log:hover {
+    background-color: rgb(0, 162, 255);
+    color: white;
+}
+
+.signin_signup {
+    padding: 5px 10px;
+    font-weight: 700;
+    border: none;
+    transition: .3s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signin_signup:hover {
+    background-color: red;
+    color: white;
+}
+
+.signin_footer {
+    display: flex;
+    font-size: 13px;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 72px;
+}
+
+.signin_footer p {
+    margin: 0px 10px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.signin_footer p:hover {
+    color: red;
+}
+
+.signin_footer_p {
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.signin_footer_p span {
+    color: red;
+    cursor: pointer;
+}
+
+.signin_log {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    transition: 0.2s;
+}

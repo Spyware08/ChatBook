@@ -1,0 +1,124 @@
+.home {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.home_head img {
+    width: 60px;
+
+}
+
+.home_head {
+    padding: 2px 20px;
+    display: flex;
+    justify-content: space-between;
+   
+
+}
+
+.home_head_logo {
+    align-items: center;
+    display: flex;
+}
+
+.home_profile {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.home_profile img {
+    width: 40px;
+    cursor: pointer;
+    transition: 0.1s ease-out;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0px 15px;
+}
+
+.home_profile img:hover {
+    box-shadow: 0px 0px 5px 3px green;
+}
+
+.home_logout i {
+    font-size: 23px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-left: 15px;
+}
+
+.home_logout i:hover {
+    color: red;
+}
+
+.home_logout {
+    color: white;
+    text-decoration: none;
+}
+
+.home_profile span {
+    margin-left: 30px;
+}
+
+.home_container {
+    display: flex;
+}
+
+.navlink {
+    color: white;
+    width: 150px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.nav_component {
+    overflow: hidden;
+}
+
+.nav_component ul li {
+    padding: 15px 3px;
+    margin: 2px 0px;
+    list-style-type: none;
+    transition: all 0.2;
+    width: 100%;
+    overflow: hidden;
+    /* background-color: red; */
+
+}
+
+.nav_component ul {
+    background-color: rgb(20, 20, 20);
+    width: 150px;
+    height: 88vh;
+}
+
+.nav_component ul li:hover {
+    width: 150px;
+    background-color: rgba(2, 129, 2, 0.7);
+    padding: 15px 3px;
+}
+
+.active{
+    color: rgb(2, 129, 2);
+   
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-10px);
+    transition: all 0.5s;
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-80px);
+    transition: all 0.5s;
+}
+.idcard{
+    position: absolute;
+    right: 0;
+    margin-top: -8px;
+}

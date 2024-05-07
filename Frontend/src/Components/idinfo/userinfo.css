@@ -1,0 +1,88 @@
+.userinfo_main{
+    margin: 5px;
+    width: 400px;
+    border: 1px solid green;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0px 0px 5px 0px green;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    right: 0;
+}
+.userinfo_img{
+    display: flex;
+    justify-content: center;
+}
+
+
+.userinfo_img img{
+    width: 100px;
+    border-radius: 50%;
+    
+
+}
+
+.userinfo_img h2{
+    text-align: center;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+}
+.userinfo_img p{
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+    text-align: center;
+}
+.userinfo_table{
+    background-color: rgb(31, 31, 31);
+    width: 350px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+
+.userinfo_table tr th{
+    text-align: start;
+    padding: 3px;
+    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    
+}
+
+.userinfo_table tr td{
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+.userinfo_footer{
+    margin: 10px;
+    font-family:Calibri, 'Trebuchet MS', sans-serif;
+}
+.userinfo_icn{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.userinfo_icn i{
+    cursor: pointer;
+    margin: 10px;
+    font-size: 25px;
+    transition: 0.2s;
+
+}
+.whatsapp:hover{
+    color: green;
+    /* font-size: 30px; */
+}
+.youtube:hover{
+    color: red;
+}
+.facebook:hover{
+    color: #4267B2;
+}
+.instagram:hover{
+    color: #C13584;
+}
+.linkedin:hover{
+    color: #0a66c2;
+}
