@@ -10,7 +10,7 @@ import { Profile_picture } from "./function/FileUploading/Profile_uploading.js";
 const app = express()
 const port = 8080
 const cors_options = {
-    origin: ["http://localhost:3000","https://chatbook-delta.vercel.app" ],
+    origin: ["https://chatbook-delta.vercel.app" ],
     credentials: true,
 };
 
