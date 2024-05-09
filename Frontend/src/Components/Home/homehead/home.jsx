@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { NavLink, Outlet, useNavigate } from 'react-router-dom'
 import "./home.css"
 import Nav from '../../Navbar/Nav'
@@ -9,8 +9,19 @@ const Home = () => {
   const navigate = useNavigate()
   const checkToken = useNavigate()
   const [show, setshow] = useState(false)
+  const [profile_img, setProfile_img] = useState("")
 
   let userData = JSON.parse(sessionStorage.getItem("userData"));
+
+  const defaultimg = "./img/profile.jpg"
+
+  useEffect(() => {
+    if (userData && userData.profile_path && userData.profile_path.length > 0) {
+      setProfile_img(userData.profile_path);
+    } else {
+      setProfile_img(defaultimg);
+    }
+  }, [userData]);
 
   if (!userData) {
     return checkToken("/auth")
@@ -24,6 +35,7 @@ const Home = () => {
     sessionStorage.clear();
     navigate("/")
   }
+  // console.log(userData.profile_path.length);
 
 
   return (
@@ -36,7 +48,7 @@ const Home = () => {
           </div>
           <div className='home_profile'>
             <h3>{userData.firstname}</h3>
-            <img src="./img/profile.jpg" alt="" onClick={toggleclass} />
+            <img src={profile_img} alt="" onClick={toggleclass} />
             <NavLink to="/" onClick={logout} className="home_logout"><i class="fa-solid fa-arrow-right-from-bracket"></i></NavLink>
 
           </div>

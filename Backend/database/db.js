@@ -7,6 +7,7 @@ const User = new Schema({
     lastname: { type: String },
     email: { type: String },
     password: { type: String },
+    profile_path: { type: String, default: '' },
     image_path: [{ type: String }]
 })
 

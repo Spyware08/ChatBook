@@ -1,0 +1,10 @@
+.profile_upload img{
+    width: 17rem;
+    border-radius: 2rem;
+
+}
+.profile_upload{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}

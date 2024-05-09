@@ -1,8 +1,20 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import "./profile.css"
 
 const Profile = () => {
   let userData = JSON.parse(sessionStorage.getItem("userData"));
+  const [profile_img, setProfile_img] = useState("")
+
+  const defaultimg = "./img/profile.jpg"
+
+  useEffect(() => {
+    if (userData && userData.profile_path && userData.profile_path.length > 0) {
+      setProfile_img(userData.profile_path);
+    } else {
+      setProfile_img(defaultimg);
+    }
+  }, [userData]);
+
 
   return (
     <div className='profile_head'>
@@ -10,7 +22,7 @@ const Profile = () => {
       <div className='profile_main'>
 
         <div className='profile_img'>
-          <img src="../img/profile.jpg" alt="" />
+          <img src={profile_img} alt="" />
         </div>
         <div className='profile_name'>
           <div>

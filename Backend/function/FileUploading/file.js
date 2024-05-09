@@ -4,7 +4,7 @@ import { upload } from "./multer.js";
 import cloudinary from "./Cloudinary.js";
 
 export const Filedata = Router();
-const CLOUDINARY_FOLDER = "ChatBook_user_images";
+const CLOUDINARY_FOLDER = "ChatBook_images/User_images";
 
 Filedata.post('/upload_file', upload.single("image"), async (req, res, next) => {
     try {

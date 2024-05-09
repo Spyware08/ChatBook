@@ -25,7 +25,7 @@ const Signin = () => {
             try {
                 const res = await API.post("/login", log_data)
                 sessionStorage.setItem("userData", JSON.stringify(res.data.userdata));
-                navigate("/")
+                navigate("/welcome")
             } catch (e) {
                 console.error(e.response.status);
                 if(e.response.status===404){
@@ -49,7 +49,7 @@ const Signin = () => {
                 </div>
                 <div className='signin_input'>
                     <input type="text" placeholder='Username' ref={email} />
-                    <input type="passward" placeholder='Passward' ref={password} />
+                    <input type="password" placeholder='Passward' ref={password} />
 
                 </div>
                 <div className='signin_btn'>

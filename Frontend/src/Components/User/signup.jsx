@@ -62,7 +62,7 @@ export default function Signup() {
                         <label>Email</label><br />
                         <input type="email" required ref={email} /><br />
                         <label>Passward</label><br />
-                        <input type="Passward" required ref={password} />
+                        <input type="password" required ref={password} />
                     </div>
                     <div className='signup_btn'>
                         <button onClick={handleSubmit}>Submit</button>

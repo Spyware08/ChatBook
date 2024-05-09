@@ -8,8 +8,9 @@ import Feeds from './Components/Home/feeds/feeds';
 import CreatePost from './Components/Home/Create Post/CreatePost';
 import People from './Components/Home/People/People';
 import Profile from './Components/Home/Profile/Profile';
-import Saved from './Components/Home/Saved/Saved';
 import Auth from './Components/User/Auth';
+import Setting from './Components/Home/Setting/Setting';
+import Profile_upload from './Components/Home/Setting/Profile_upload/Profile_upload';
 
 function App() {
   const navigate = useNavigate();
@@ -38,7 +39,8 @@ function App() {
               <Route path="createpost" element={<CreatePost />} />
               <Route path="people" element={<People />} />
               <Route path="profile" element={<Profile />} />
-              <Route path="setting" element={<Saved />} />
+              <Route path="setting" element={<Setting />} />
+              <Route path="profile_Upload" element={<Profile_upload />} />
             </Route>
           )}
         </Routes>

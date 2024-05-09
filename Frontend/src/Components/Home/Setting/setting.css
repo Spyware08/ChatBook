@@ -1,0 +1,21 @@
+.setting{
+    display: grid;
+    padding: 1.5rem;
+    grid-template-columns: 23rem 23rem 23rem;
+    grid-gap: 1rem;
+}
+.setting button{
+    padding: 2rem;
+    font-size: larger;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+.setting button:hover{
+    background-color: rgb(78, 78, 78);
+}
+.setting_head{
+    font-family: sans-serif;
+    padding: 5px;
+}
