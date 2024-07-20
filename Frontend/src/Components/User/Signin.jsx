@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import API from '../../API/API';
 import 'react-toastify/dist/ReactToastify.css';
@@ -19,6 +19,8 @@ const Signin = () => {
                 email: email,
                 password: password
             };
+            toast.loading("Please wait.");
+
 
             try {
                 const res = await API.post("/login", log_data);
